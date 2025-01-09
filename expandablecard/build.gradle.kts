@@ -50,6 +50,14 @@ android {
         }
     }
 
+    namespace = "com.example.expandablecard"
+
+    publishing{
+        singleVariant("release"){
+            withSourcesJar()
+        }
+    }
+
 }
 
 dependencies {
@@ -71,16 +79,18 @@ dependencies {
     debugImplementation(libs.androidx.ui.test.manifest)
 }
 
-//publishing{
-//    publications {
-//        register<MavenPublication>("release"){
-//            groupId = "com.example.createlibrarytutorial"
-//            artifactId = "com.example.expandablecard"
-//            version ="1.0"
-//
-//            afterEvaluate{
-//                from(components["release"])
-//            }
-//        }
-//    }
-//}
+
+publishing {
+    publications {
+        register<MavenPublication>("release") {
+            groupId = "com.example"
+            artifactId = "expandablecard"
+            version = "1.0"
+//            from(components["release"])
+            afterEvaluate{
+                from(components["release"])
+            }
+        }
+    }
+}
+
