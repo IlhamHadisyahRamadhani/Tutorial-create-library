@@ -50,12 +50,8 @@ android {
         }
     }
 
-    namespace = "com.example.expandablecard"
-
     publishing{
-        singleVariant("release"){
-            withSourcesJar()
-        }
+        singleVariant("release")
     }
 
 }
