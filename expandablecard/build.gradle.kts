@@ -79,9 +79,9 @@ dependencies {
 publishing {
     publications {
         register<MavenPublication>("release") {
-            groupId = "com.example"
+            groupId = "com.github.ilhamhadisyahramadhani"
             artifactId = "expandablecard"
-            version = "1.0"
+            version = "1.5"
 //            from(components["release"])
             afterEvaluate{
                 from(components["release"])
