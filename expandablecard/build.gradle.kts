@@ -80,7 +80,7 @@ publishing {
     publications {
         register<MavenPublication>("release") {
             groupId = "com.example.createlibrarytutorial"
-            artifactId = "com.example.expandablecard"
+            artifactId = "expandablecard"
             version = "1.4.2"
 //            from(components["release"])
             afterEvaluate{
