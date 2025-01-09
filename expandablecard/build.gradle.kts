@@ -81,7 +81,7 @@ publishing {
         register<MavenPublication>("release") {
             groupId = "com.github.ilhamhadisyahramadhani"
             artifactId = "expandablecard"
-            version = "1.6"
+            version = "1.4.2"
 //            from(components["release"])
             afterEvaluate{
                 from(components["release"])
